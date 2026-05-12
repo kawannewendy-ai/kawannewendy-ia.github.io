@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <h1> <title>Recursos Multimídia - Cap. 4 / Ativ. 4</title></h1>
+
+
+
+<body>
+
+    <header>
+
+        <h1>Recursos Multimídia</h1>
+
+        <p>
+            Nome: Kawanne Wendy Silva de Melo<br>
+            Matrícula: 2026312089 <br>
+            Data: 10/05/2026
+        </p>
+
+    </header>
+
+    <main>
+
+        <!-- BLOCO 1 -->
+
+        <figure>
+
+            <h2>Bloco 1 — Vídeo com legenda e poster</h2>
+
+            <video
+                controls
+                width="800"
+                height="450"
+                poster="poster-aula.jpg"
+                preload="metadata">
+
+                <source src="video-aula.mp4" type="video/mp4">
+
+                <source src="video-aula.webm" type="video/webm">
+
+                <track
+                    kind="subtitles"
+                    srclang="pt"
+                    src="legendas/aula-pt.vtt"
+                    label="Português"
+                    default>
+
+                Seu navegador não suporta vídeo.
+                <a href="video-aula.mp4">
+                    Clique para baixar o vídeo
+                </a>
+
+            </video>
+
+            <figcaption>
+                Aula introdutória de HTML5.
+            </figcaption>
+
+        </figure>
+
+        <!-- BLOCO 2 -->
+
+        <figure>
+
+            <h2>Bloco 2 — Áudio com fallback</h2>
+
+            <audio controls preload="metadata">
+
+                <source src="podcast.mp3" type="audio/mpeg">
+
+                <source src="podcast.ogg" type="audio/ogg">
+
+                Seu navegador não suporta áudio.
+                <a href="podcast.mp3">
+                    Clique para baixar o áudio
+                </a>
+
+            </audio>
+
+            <figcaption>
+
+                Episódio de podcast sobre tecnologia.
+
+                <br><br>
+
+                <a href="transcricao.html">
+                    Ver transcrição
+                </a>
+
+            </figcaption>
+
+        </figure>
+
+        <!-- BLOCO 3 -->
+
+        <figure>
+
+            <h2>Bloco 3 — Vídeo externo do YouTube</h2>
+
+            <iframe
+                width="800"
+                height="450"
+                src="HTTPS://www.youtube.com/watch?v=jgQjeGRdgA"
+                title="Vídeo educativo sobre HTML"
+                loading="lazy"
+                allowfullscreen>
+
+            </iframe>
+
+            <figcaption>
+                Vídeo educativo do YouTube sobre HTML5.
+            </figcaption>
+
+        </figure>
+
+        <!-- BLOCO 4 -->
+
+        <figure>
+
+            <h2>Bloco 4 — Imagem responsiva</h2>
+
+            <picture>
+
+                <source
+                    media="(min-width: 768px)"
+                    srcset="img/banner-wide.jpg">
+
+                <img
+                    src="img/banner-mobile.jpg"
+                    alt="Banner sobre programação"
+                    width="800"
+                    height="400">
+
+            </picture>
+
+            <figcaption>
+                Banner responsivo para diferentes tamanhos de tela.
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+    <footer>
+
+      <h1> <p>
+            Atividade de HTML5 - Página Multimídia
+        </p></h1>
+
+    </footer>
+
+</body>
+
+</html>>
+
+
