@@ -1,1 +1,99 @@
 
+body {
+  font-family: Arial;
+  background-color: #FF7089;
+  margin-top: 10px;
+}
+#cabecalho-principal {
+  color: #FF0050;
+    background-color: lightpink;
+  font-family: Super Pandora Regular;
+text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+  font-size: 29px;
+  border-radius: 8px;
+  padding: 15px;
+}
+#titulo {
+  color: #FF0050;
+    background-color: lightpink;
+  font-family: Super Pandora Regular;
+text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 36px;
+  border-radius: 8px;
+  padding: 6px;
+}
+.p1 {
+  font-family: Peach Club Script;
+    color: #FF0072;
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 8px;
+  padding: 10px;
+}
+footer {
+  font-family: Peach Club Script;
+  color: #FF0072;
+  background-color: #EEDAE5;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 11px;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 7px;
+}
+form {
+  background-color: lightpink;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 17px;
+  border-radius: 8px;
+  padding: 6px;
+}
+label {
+  font-family: Sans-Serif;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 15px;
+}
+fieldset {
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+textarea {
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 5px;
+   border-radius: 8px;
+  padding: 8px;
+}
+#comentario {
+  background-color: #EEDAE5;
+  font-family: Verdana;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+}
+button {
+  family-font: Georgia;
+  background-color: #FFD3F0;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: left;
+}
