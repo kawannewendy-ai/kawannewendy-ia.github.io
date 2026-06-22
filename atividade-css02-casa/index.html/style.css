@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana de Inovação e Tecnologia — IFAL</title>
+  <!--
+    ATENÇÃO: este arquivo HTML NÃO deve ser modificado.
+    Toda a atividade é resolvida exclusivamente no arquivo atv01.css.
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1>Semana de Inovação e Tecnologia</h1>
+    <p class="subtitulo">Instituto Federal de Alagoas — Campus Maceió</p>
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trilhas">Trilhas</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="sobre" class="secao">
+      <h2>Sobre o evento</h2>
+      <p>A Semana de Inovação e Tecnologia reúne estudantes, docentes e profissionais em torno de palestras, oficinas e maratonas de desenvolvimento.</p>
+      <p>São cinco dias de atividades gratuitas, distribuídas em quatro trilhas temáticas.</p>
+      <p class="destaque">As inscrições são limitadas e encerram na sexta-feira anterior ao evento.</p>
+    </section>
+
+    <section id="trilhas" class="secao">
+      <h2>Trilhas temáticas</h2>
+      <div class="grade">
+        <article class="cartao">
+          <h3>Desenvolvimento Web</h3>
+          <p>Fundamentos de HTML, CSS e JavaScript aplicados à construção de interfaces.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Ciência de Dados</h3>
+          <p>Coleta, tratamento e visualização de dados com ferramentas livres.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Internet das Coisas</h3>
+          <p>Prototipagem de dispositivos conectados com microcontroladores.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+        <article class="cartao">
+          <h3>Segurança da Informação</h3>
+          <p>Princípios de proteção de sistemas, redes e dados pessoais.</p>
+          <a href="#inscricao" class="botao">Inscrever-se</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="programacao" class="secao">
+      <h2>Programação por dia</h2>
+      <ul class="lista-dias">
+        <li>Segunda-feira — Abertura
+          <ul>
+            <li>Credenciamento</li>
+            <li>Palestra de abertura</li>
+          </ul>
+        </li>
+        <li>Terça-feira — Oficinas
+          <ul>
+            <li>Oficina de HTML semântico</li>
+            <li>Oficina de CSS responsivo</li>
+          </ul>
+        </li>
+        <li>Quarta-feira — Maratona
+          <ul>
+            <li>Formação de equipes</li>
+            <li>Desenvolvimento orientado</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="inscricao" class="secao">
+      <h2>Inscrição</h2>
+      <p>Preencha os dados abaixo para garantir sua vaga.</p>
+      <form class="formulario">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="senha">Senha de acesso</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="mensagem">Observações</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <button type="submit">Enviar inscrição</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Semana de Inovação e Tecnologia — IFAL, Campus Maceió.</p>
+    <p>Contato: eventos@ifal.edu.br</p>
+  </footer>
+
+</body>
+</html>
+
+/* rem é baseado no tamanho da fonte do elemento raiz (html),
+   em é baseado no tamanho da fonte do elemento pai e % depende
+   do tamanho do elemento de referência. Sob zoom e redimensionamento,
+   cada unidade escala de forma diferente. rem é ideal para consistência, em para componentes e % para layouts responsivos. */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+ .menu a {
+  color: pink;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a::before  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ .menu a { {
+  content: " $ ";
+}
+
+
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 32px;
+  width: 90%;
+  max-width: 960px;
+}
+
+h2 {
+  color: #1565c0;
+  font-size: 1.5rem;
+}
+
+h2 + p {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.destaque {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+.destaque ~ p {
+  color: blue;
+}
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 29%;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+/*O :nth-child() seleciona elementos pela sua posição entre os irmãos (1º,2º,3º, pares, ímpares, etc), permitindo aplicar estilos sem adicionar classes extras no html, isso mantém a marcação mais limpa.*/
+
+.cartao:nth-child(odd) {
+  background-color: #e3f2fd;
+}
+
+.cartao:nth-child(even) {
+  background-color: pink;
+}
+
+.cartao:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+/* Esta regra prevalece porque .cartao .botao possui maior especificidade do que apenas .botao.*/
+
+.cartao .botao {
+  background-color: purple;
+} 
+
+.botao:hover {
+  background-color: #0d47a1;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 28px;
+}
+/* .lista-dias li seleciona todos os li descendentes.
+   .lista-dias > li seleciona apenas os filhos diretos. */
+.lista-dias > li {
+  font-weight: bold;
+}
+
+.lista-dias > li li {
+  font-weight: normal;
+}
+.lista-dias > li:first-child {
+  color: green;
+}
+
+.lista-dias > li:last-child {
+  color: red;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 48%;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+label::after {
+  content: " !! ";
+    color: red;
+}
+
+input,
+textarea {
+  display: block;
+  width: 320px;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #999999;
+  }
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+input[type="password"] {
+  border: 2px solid red;
+}
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 24px;
+  font-size: 0.8rem;
+}
+   
+   botao:hover {
+  background-color: #0d47a1;
+}
+   
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+   input:focus,
+textarea:focus {
+  border: 2px solid #1565c0;
+  outline: none;
+}
