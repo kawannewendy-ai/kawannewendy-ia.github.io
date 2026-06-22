@@ -1,0 +1,259 @@
+/* rem é baseado no tamanho da fonte do elemento raiz (html),
+   em é baseado no tamanho da fonte do elemento pai e % depende
+   do tamanho do elemento de referência. Sob zoom e redimensionamento,
+   cada unidade escala de forma diferente. rem é ideal para consistência, em para componentes e % para layouts responsivos. */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+ .menu a {
+  color: pink;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a::before  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ .menu a { {
+  content: " $ ";
+}
+
+
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 32px;
+  width: 90%;
+  max-width: 960px;
+}
+
+h2 {
+  color: #1565c0;
+  font-size: 1.5rem;
+}
+
+h2 + p {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.destaque {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+.destaque ~ p {
+  color: blue;
+}
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 29%;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+/*O :nth-child() seleciona elementos pela sua posição entre os irmãos (1º,2º,3º, pares, ímpares, etc), permitindo aplicar estilos sem adicionar classes extras no html, isso mantém a marcação mais limpa.*/
+
+.cartao:nth-child(odd) {
+  background-color: #e3f2fd;
+}
+
+.cartao:nth-child(even) {
+  background-color: pink;
+}
+
+.cartao:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+/* Esta regra prevalece porque .cartao .botao possui maior especificidade do que apenas .botao.*/
+
+.cartao .botao {
+  background-color: purple;
+} 
+
+.botao:hover {
+  background-color: #0d47a1;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 28px;
+}
+/* .lista-dias li seleciona todos os li descendentes.
+   .lista-dias > li seleciona apenas os filhos diretos. */
+.lista-dias > li {
+  font-weight: bold;
+}
+
+.lista-dias > li li {
+  font-weight: normal;
+}
+.lista-dias > li:first-child {
+  color: green;
+}
+
+.lista-dias > li:last-child {
+  color: red;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 48%;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+label::after {
+  content: " !! ";
+    color: red;
+}
+
+input,
+textarea {
+  display: block;
+  width: 320px;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #999999;
+  }
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+input[type="password"] {
+  border: 2px solid red;
+}
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 24px;
+  font-size: 0.8rem;
+}
+   
+   botao:hover {
+  background-color: #0d47a1;
+}
+   
+.menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+   input:focus,
+textarea:focus {
+  border: 2px solid #1565c0;
+  outline: none;
+}
