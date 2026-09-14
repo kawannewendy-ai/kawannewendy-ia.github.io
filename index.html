@@ -1,58 +1,95 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-  <h1>Kawanne Wendy Silva de Melo</h1>
-  <h2>921C Desenvolvimento de Sistemas</h2>
-    
-  <img src="minhafoto.jpg"
- width="169"
- height="210">
+<html lang="pt-BR">
 
-  <h3>Data de nascimento 01/04/2010</h3>
-  <p>Gosto de comer,dormir,ler,brincar com o meu irmão e tirar a paciência dos meus cachorros.<br/> Livros com romance,mistério e de sobrenatural.<br/> Ler mangá,assistir anime e reassistir desenhos da minha infância.<br/> Não tenho interesses.
-   
-   <ul>
-     <li>Hardware e Software</li>
-     <li>Computação</li>
-     <li>JavaScript e VSCode</li>
-     <li>HTML</li>
-     <li>O que é a internet</li>
-     <li>Web e Navegadores</li>
-     <li>Componentes do computador</li>
-   </lu>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal — Kawanne</title>
+  <!-- Salve o tema escolhido como "estilo.css" (mesma pasta deste arquivo) -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
 
-     <p>O desenvolvimento de sistemas é a criação,análise,modelagem e manutenção de softwares e aplicações digitas para otimizar processos.<br//>Envolve linguagens de programação,bancos de dados e metodologias ágeis para atender ás necessidades dos usuários,abrangendo web,mobile e desktop. 
-   
-    <br/><a href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/tecnicos-integrados/desenvolvimento-de-sistemas/desenvolvimento-de-sistemas-campus-maceio#:~:text=%3E-,DESENVOLVIMENTO%20DE%20SISTEMAS,-menu">Meu curso</a>
+<body>
+  <div class="pagina">
 
-       <h3>Atividades Capítulo 04</h3>
-  <ol>
-    <li> Atividade 01 - <a href="cap04/cap04-at01-tabela-basica.html">Tabela-basica</a> </li>
-    <li> Atividade 02 - <a href="cap04/cap04/cap04-at02-tabela-semantica.html">Tabela-smantica</a> </li>
-    <li> Atividade 03 - <a href="cap04/cap04/cap04/at03-listas-avancadas.html">Lista-avancadas</a></li>
-    <li> Atividade 04 - <a href="cap04/cap04/cap04/cap04/at04-multimidia.html">Multimidia</a></li>
-  </ol>
+    <!-- ====== CABEÇALHO — TROQUE pelo seu nome e sua frase ====== -->
+    <header class="cabecalho">
+      <h1>Kawanne Wendy Silva de Melo</h1>
+      <p>Estudante de Sistemas de Informação · IFAL</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-       <h3>Atividades Capítulo 05</h3>
-     <ol>
-       <li><a href="cap05/at01-formulario-de-contato.html">AT01 — Formulário de Contato</a></li>
-      <li><a href="cap05/at02.html">AT02 — Cadastro de Usuário</a></li>
-      <li><a href="cap05/at03.html">AT03 — Matrícula Acadêmica</a></li>
-      <li><a href="cap05/at04.html">AT04 — Inscrição em Evento</a></li>
-      <li><a href="cap05/at05.html">AT05 — Pesquisa Acadêmica</a></li>
-     </ol>
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="principal">
+      <section id="sobre" class="cartao">
+        <h2>Sobre mim</h2>
+      <img src="minhafoto.jpg" width="169" height="210">
+        <p>
+  Sou estudante do curso de Desenvolvimento de Sistemas no IFAL.
+  Gosto de comer, dormir, ler, brincar com o meu irmão e tirar a paciência
+  dos meus cachorros. Gosto de livros de romance, mistério e sobrenatural,
+  além de ler mangás, assistir animes e reassistir desenhos da minha infância.
+</p>
+      </section>
 
-       <h2>Atividade de CSS01</h2>
-     <ol>
-       <li><a href="atividade-css01-sala/index.html"> Atividade CSS01</a></li>
-    </ol>
-       <h2>Atividade de CSS02</h2>
-     <ol>
-       <li><a href="atividade-css02-casa/index.html"> Atividade CSS02</a></li>
-     </ol>
+      <section id="projetos" class="cartao">
+        <h2>Projetos</h2>
+        <!-- Galeria com Grid: cada .projeto é um card; adicione/remova à vontade -->
+        <div class="projetos">
+          <article class="projeto">
+            <h3>Atividades de HTML</h3>
+<p>
+  Atividades desenvolvidas durante o curso, envolvendo tabelas,
+  listas, formulários e elementos multimídia.
+</p>
+            
+          </article>
+          <article class="projeto">
+            <h3>Atividades de CSS</h3>
+<p>
+  Atividades desenvolvidas para aprender estilização de páginas,
+  seletores, cores, fontes e organização do conteúdo com CSS.
+</p>
+            
+          </article>
+          <article class="projeto">
+            
+            
+          </article>
+        </div>
+      </section>
+    </main>
 
-  </body>
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="lateral">
+      <section class="cartao">
+        <h2>Habilidades</h2>
+        <!-- TROQUE pelas suas habilidades -->
+        <ul class="habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Grid</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="cartao">
+        <h2>Contato</h2>
+        <!-- TROQUE pelos seus links -->
+        <ul class="contato">
+          <li>✉️ <a href="mailto: kawannewendy@gmail.com">kawannewendy@gmail.com</a></li>
+          <li>🐙 <a href="https://github.com/kawannewendy-ai">kawannewendy-ai</a></a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- ====== RODAPÉ — TROQUE o nome ====== -->
+    <footer class="rodape">© 2026 Kawanne Wendy Silva de Melo· feito com HTML + CSS Grid</footer>
+
+  </div>
+</body>
+
 </html>
